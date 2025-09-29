@@ -1,11 +1,12 @@
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
+
 app.registerExtension({
     name: "memory.cleanup",
     init() {
         api.addEventListener("memory_cleanup", ({ detail }) => {
             if (detail.type === "cleanup_request") {
-                console.log("收到内存清理请求");
+                console.log("Получен запрос на очистку памяти");
                 fetch("/free", {
                     method: "POST",
                     headers: {
@@ -15,13 +16,13 @@ app.registerExtension({
                 })
                 .then(response => {
                     if (response.ok) {
-                        console.log("内存清理请求已发送");
+                        console.log("Запрос на очистку памяти отправлен");
                     } else {
-                        console.error("内存清理请求失败");
+                        console.error("Ошибка при отправке запроса на очистку памяти");
                     }
                 })
                 .catch(error => {
-                    console.error("发送内存清理请求出错:", error);
+                    console.error("Ошибка при отправке запроса на очистку памяти:", error);
                 });
             }
         });
