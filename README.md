@@ -5,9 +5,8 @@
 
 ![使用示例1](1.png)
 
-![使用示例2](2.png)
-
 
 git clone https://github.com/LAOGOU-666/Comfyui-Memory_Cleanup-rus
 
 pip install -r requirements.txt
+
