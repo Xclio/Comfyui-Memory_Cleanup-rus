@@ -6,9 +6,9 @@
 ![使用示例1](1.png)
 
 
-git clone [https://github.com/LAOGOU-666/Comfyui-Memory_Cleanup-rus](https://github.com/Xclio/Comfyui-Memory_Cleanup-rus)
-
+git clone https://github.com/Xclio/Comfyui-Memory_Cleanup-rus/
 pip install -r requirements.txt (обычно ненужно)
+
 
 
 
