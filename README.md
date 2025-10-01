@@ -7,7 +7,9 @@
 
 
 git clone https://github.com/Xclio/Comfyui-Memory_Cleanup-rus/
+
 pip install -r requirements.txt (обычно ненужно)
+
 
 
 
